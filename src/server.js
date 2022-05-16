@@ -1,7 +1,7 @@
 const db = require('../config/db.config');
 const express = require('express');
+const hbs = require('hbs')
 
-const userRouter = requier('../routes/userRouter')
 const homeRouter = require('../routes/homeRouter')
 
 const PORT = process.env.PORT || 8080
@@ -18,7 +18,12 @@ db.sequelize
 const app = express();
 app.listen(PORT, () => console.log(`server started on port ${PORT}`))
 
-app.use("/user", userRouter)
+app.set("view engine", "hbs");
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static('./views/css'));
+app.use(express.static('./views/images'));
+hbs.registerPartials('./views/partials')
+
 app.use("/", homeRouter)
 
 
