@@ -16,7 +16,7 @@
         data-image-height="793" data-animation-name="" data-animation-duration="0" data-animation-delay="0"
         data-animation-direction="">
         <div class="u-clearfix u-sheet u-sheet-1">
-            <img src="images/641ILYUXVfs.png" alt="" class="u-image u-image-default u-image-1" data-image-width="604"
+            <img src="641ILYUXVfs.png" alt="" class="u-image u-image-default u-image-1" data-image-width="604"
                 data-image-height="599" data-animation-name="rotateIn" data-animation-duration="1000"
                 data-animation-delay="0" data-animation-direction="">
             <div class="u-gradient u-shape u-shape-rectangle u-shape-1" data-animation-name="zoomIn"
@@ -25,13 +25,13 @@
                 data-animation-duration="1000" data-animation-delay="0" data-animation-direction=""></div>
             <div class="u-gradient u-shape u-shape-rectangle u-shape-3" data-animation-name="zoomIn"
                 data-animation-duration="1000" data-animation-delay="0" data-animation-direction=""></div>
-            <img src="images/ASw6qkE1_jU.png" alt="" class="u-image u-image-default u-image-2" data-image-width="1280"
+            <img src="ASw6qkE1_jU.png" alt="" class="u-image u-image-default u-image-2" data-image-width="1280"
                 data-image-height="675" data-animation-name="zoomIn" data-animation-duration="1000"
                 data-animation-delay="0" data-animation-direction="">
-            <img src="images/yLAhMFMAKJw.png" alt="" class="u-image u-image-default u-image-3" data-image-width="1280"
+            <img src="yLAhMFMAKJw.png" alt="" class="u-image u-image-default u-image-3" data-image-width="1280"
                 data-image-height="637" data-animation-name="zoomIn" data-animation-duration="1000"
                 data-animation-delay="0" data-animation-direction="">
-            <img src="images/ZJR56gRSE6k.png" alt="" class="u-image u-image-default u-image-4" data-image-width="900"
+            <img src="ZJR56gRSE6k.png" alt="" class="u-image u-image-default u-image-4" data-image-width="900"
                 data-image-height="520" data-animation-name="zoomIn" data-animation-duration="1000"
                 data-animation-delay="0" data-animation-direction="">
             <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="bounceIn"
@@ -46,6 +46,12 @@
             </h2>
         </div>
     </section>
+     <table>
+         <tr><th>Марка</th><th>Модель</th><th>Цвет</th><th>Цена</th></tr>
+         {{#each autos}}
+            <tr><td>{{this.name}}</td><td>{{this.model}}</td><td>{{this.color}}</td><td>{{this.price}}</td></tr>
+         {{/each}}
+     </table>
     {{> footer}}
 </body>
 

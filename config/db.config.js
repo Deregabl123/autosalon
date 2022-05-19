@@ -16,9 +16,9 @@ db.supply = supplyDefiner(sequelize)
 const purchaseDefiner = require("../models/purchase")
 db.purchase = purchaseDefiner(sequelize)
 
-db.purchase.hasMany(db.user);
-db.purchase.hasMany(db.auto);
-db.purchase.hasMany(db.supply);
+db.user.hasMany(db.purchase);
+db.auto.hasMany(db.purchase);
+db.auto.hasMany(db.supply);
 
 
 db.ROLES = ["user", "admin"]
