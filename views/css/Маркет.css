@@ -1,10 +1,29 @@
+table {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  width: 100%;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+table th {
+	font-weight: bold;
+	padding: 15px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+
 .u-section-1 {
   background-image: url("images/AT2kOfADpWU.jpg");
   background-position: 50% 50%;
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .u-section-1 .u-image-1 {
